@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10em;
+}
+.titulo-contacto-galaxia{
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+    text-transform: capitalize;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.titulo-form{
+    text-align: center;
+    text-decoration:underline;
+
+    color: #fff;
+}
+.contenedor-contacto{
+    background-color: #4b4646;
+    border-radius: 10px;
+    /* modifique el segundo parametro de 0 a auto para centrar al medio del viewport el contenedor del form */
+    margin: 60px auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+}
+
+input[type = "text"],
+input[type= "email"],
+.text_select{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid  #626262;
+    border-radius: 8px;
+}
+
+label{
+    color: #fff;
+}
+
+.checkbox-group,
+.radio-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    
+}
+
+.checkbox-group,
+.radio-group  {
+    margin-right: 10px;
+}
+
+button{
+    width: 100%;
+    background-color:rgb(70, 70, 219);
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+input:focus,.text_select:focus{
+    background-color: rgb(211, 219, 219);
+}
+
+button:hover {
+    background-color: rgb(35, 35, 139);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media  (max-width:576px) {
+    .titulo-form{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contenedor-contacto{
+        width: 90%;
+    }
+}
+@media  (min-width:576px) and (max-width:768px) {
+    .contenedor-contacto{
+        width: 80%;
+    }
+}

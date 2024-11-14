@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Z4X, el robot</title>
+
+    <!-- Acá van los links a los css que te darán estilos, uno general y otro particular -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/estilosNavbar.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Este es el título y la navegación -->
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="/assets/img/Z4XRobot-removebg-preview.png" alt="logo-robot"><a href="/index.html"></a>
+            <div class="menu-icon" id="menu-icon"><i id="hamburguesa" class="bi bi-list"></i></div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/misiones.html">Misiones</a></li>
+                <li><a href="/pages/audiovisuales.html">Audiovisuales</a></li>
+                <li><a class="active" href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Este es el formulario de contacto -->
+
+    <main>
+        <h2 class="titulo-contacto-galaxia">Conexión Intergaláctica: Déjanos tu Mensaje</h2>
+        <div class="contenedor-contacto">
+            <form>
+                <h2 class="titulo-form">Contáctanos</h2>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe  tu nombre" required minlength="3" maxlength="150">
+                <label for="mail">Email: </label>
+                <input type="email" id="mail" name="mail" placeholder="Escribe tu correo electrónico" required minlength="5" maxlength="250">
+                <label for="pais">País: </label>
+                <select class="text_select" name="pais" id="pais">
+                    <option value="" disabled selected>Seleccione su país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="España">España</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Ecuador">Ecuaador</option>
+                </select>
+                <label for="comentario">Comentario: </label>
+                <textarea name="comentario" class="text_select" id="comentario"
+                    placeholder="Escribe tu mensaje.." required minlength="10" maxlength="150"></textarea>
+                <label>¿Te gustaría seguir la historia de Z4X?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="historia" value="interesado"> Sí, solo su historia</label>
+                    <label><input type="checkbox" name="historia" value="no_interesado"> Sí, también la historia de sus
+                        amigos</label>
+                </div>
+                <label>¿Crees que Z4X debería ser considerado un héroe?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="heroe" value="si" required> Sí</label>
+                    <label><input type="radio" name="heroe" value="no"> No</label>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </main>
+    <!-- Este es el footer (la parte del final de la página) -->
+    <footer>
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+    <script src="/JS/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    /* tuve que aplicar un z index pq el carrusel no permitia ver el menu en dispositivo menores */
+    z-index: 2;
+    position: relative;
+}
+
+.logo {
+    max-width: 6rem;
+    cursor: pointer;
+}
+
+
+#hamburguesa{
+    color: #ffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.nav-list a.active::after{
+    content: ''; /* Crea un pseudo-elemento */
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: -5px; 
+    height: 2px; 
+    background-color: #ffff; 
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 110px; /* Ajusta según la altura de la barra de navegación */
+        left: 0;
+    }
+
+    /* .nav-list.active {
+        display: flex;
+    } */
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .nav-list.show {
+        display: flex; /* Mostrar el menú cuando tiene la clase 'show' */
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        display: none; 
+        position: absolute;
+        
+        top: 110px; 
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-list.show {
+        display: flex; /* Mostrar el menú cuando tiene la clase 'show' */
+    }
+}

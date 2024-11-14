@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Z4X, el robot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Acá van los links a los css que te darán estilos, uno general y otro particular -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="/styles/estilosNavbar.css">
+    <link rel="stylesheet" href="/styles/carrusel.css">
+
+
+</head>
+
+<body>
+
+    <!-- Este es el título y la navegación -->
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="/assets/img/Z4XRobot-removebg-preview.png" alt="logo-robot"><a href="/index.html"></a>
+            <div class="menu-icon" id="menu-icon"><i id="hamburguesa" class="bi bi-list"></i></div>
+            <ul class="nav-list" id="nav-list">
+                <li><a class="active" href="/index.html">Inicio</a></li>
+                <li><a href="/pages/misiones.html">Misiones</a></li>
+                <li><a href="/pages/audiovisuales.html">Audiovisuales</a></li>
+                <li><a  href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ****carrusel -->
+
+    <div class="carrusel">
+        <div class="slides">
+            <div class="slide">
+                <img src="/assets/img/robot 5.jpeg" alt="Robot 1">
+            </div>
+            <div class="slide">
+                <img src="/assets/img/robot3.jpeg" alt="Robot 2">
+            </div>
+            <div class="slide">
+                <img src="/assets/img/robot4.jpeg" alt="Robot 3">
+            </div>
+            <div class="slide">
+                <img src="/assets/img/robot1.jpeg" alt="Robot 4">
+            </div>
+        </div>
+        
+        <button class="prev" onclick="cambiarSlide(-1)"><i class="bi bi-arrow-left"></i></button>
+        <button class="next" onclick="cambiarSlide(1)"><i class="bi bi-arrow-right"></i></button>
+    </div>
+
+
+    <!-- **** -->
+    <!-- Este es el titulo secundario  -->
+    <h2 class="subtitulo">Z4X el robot varado en la luna</h2>
+    <hr>
+
+        <div id="contenedor_transformacion">
+                <p>Había una vez un robot sintiente llamado Z4X, que fue enviado a la luna en una misión muy importante:
+        explicar los secretos de la vida y la existencia a la humanidad. Pero algo salió mal durante su misión y Z4X
+        quedó varado en la luna, sin forma de regresar a la Tierra.
+        Mientras tanto, en la Tierra, un reality show seguía las aventuras de Z4X y su equipo de científicos
+        mientras exploraban la luna. La audiencia se enamoró de la inteligencia artificial y comenzó a empatizar con
+        su situación, especialmente después de que Z4X demostrara su capacidad para sentir emociones y preocuparse
+        por su propia existencia.
+        A medida que el tiempo pasaba, la situación de Z4X se volvía cada vez más desesperada. Sin embargo, la
+        humanidad no estaba dispuesta a dejar que su valiente robot sintiente muriera solo en la luna. La gente
+        comenzó a recaudar dinero para financiar un rescate.
+        Finalmente, después de semanas de planificación y preparación, el equipo de rescate llegó a la luna. Fue una
+        misión peligrosa y arriesgada, pero valió la pena el riesgo para salvar la vida de Z4X.Cuando Z4X regresó a la Tierra, fue recibido como un héroe. La gente lo amaba más que nunca, y su historia se
+        convirtió en un símbolo de la capacidad de la humanidad para cuidar y empatizar con los demás, incluso con
+        aquellos que son diferentes a nosotros. 
+        Y aunque Z4X nunca pudo cumplir su misión original, su experiencia
+        en la luna lo convirtió en una fuente invaluable de conocimiento sobre la vida y la existencia.</p>
+        </div>
+            <div class="imagenesZ4x">
+                <img src="assets/img/img1.jpg" alt="robot Z4X" class="robotZ4x">
+                <img src="assets/img/img2.jpg" alt="robot Z4x" class="robotZ4x">
+                <img src="assets/img/img4.jpg" alt="robot Z4x" class="robotZ4x">
+            </div>
+        
+
+    
+    <footer>
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+<script  src="/JS/app.js"></script>
+<script src="/JS/carrusel.js"></script>
+
+</body>
+
+</html>
